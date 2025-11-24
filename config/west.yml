@@ -4,15 +4,15 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: rianadon
       url-base: https://github.com/rianadon
-    - name: janpfischer
-      url-base: https://github.com/janpfischer
+    - name: pedantic
+      url-base: https://github.com/PedanticAvenger
   projects:
     - name: zmk
       remote: rianadon
       revision: main
       import: app/west.yml
     - name: zmk-dongle-screen
-      remote: janpfischer
+      remote: pedantic
       revision: main
   self:
     path: config
