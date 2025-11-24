@@ -2,13 +2,15 @@
 include:
   - board: cosmos_lemon_wireless
     shield: pedantic1_left
+    artifact-name: split-dongle-left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: cosmos_lemon_wireless
     shield: pedantic1_right
+    artifact-name: split-dongle-right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: seeeduino_xiao_ble
     shield: pedantic1_dongle dongle_screen
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     snippet: zmk-usb-logging;studio-rpc-usb-uart
-    artifact-name: dongle_screen
+    artifact-name: dongle-screen
     cmake-args: -DCONFIG_ZMK_STUDIO=y
