@@ -3,6 +3,7 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &physical_layout0;  // New item added
     };
 
     mock_kscan: mock_kscan_0 {
@@ -25,5 +26,10 @@
         RC(6,0)	RC(6,1)	RC(6,2)	RC(6,3)	RC(6,4)	RC(6,5)	RC(6,7)	RC(6,8)	RC(6,9)	RC(6,10) RC(6,11) RC(6,12)>;
     };
     
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+    };
 };
 
