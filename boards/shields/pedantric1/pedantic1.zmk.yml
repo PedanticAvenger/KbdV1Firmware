@@ -1,11 +1,13 @@
 file_format: "1"
-id: rcr1
-name: RcR1
+id: pedantic1
+name: Pedantic1
 type: shield
 url: https://github.com/rianadon/Cosmos-Keyboards
 features:
   - keys
+  - underglow
+  - encoder
   - studio
 siblings:
-  - rcr1_left
-  - rcr1_right
+  - pedantic1_left
+  - pedantic1_right

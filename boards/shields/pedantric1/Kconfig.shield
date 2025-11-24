@@ -1,0 +1,9 @@
+
+config SHIELD_pedantic1_LEFT
+    def_bool $(shields_list_contains,pedantic1_left)
+
+config SHIELD_pedantic1_RIGHT
+    def_bool $(shields_list_contains,pedantic1_right)
+
+config SHIELD_pedantic1_DONGLE
+    def_bool $(shields_list_contains,pedantic1_dongle)

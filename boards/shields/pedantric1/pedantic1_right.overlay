@@ -1,18 +1,17 @@
-
-#include "rcr1.dtsi"
+#include "pedantic1.dtsi"
 
 / {
     bootloader_key: bootloader_key {
         compatible = "zmk,boot-magic-key";
-        key-position = <13>;
+        key-position = <7>;
         jump-to-bootloader;
     };
 };
 
 &default_transform {
-    col-offset = <13>;
+    col-offset = <7>;
 };
 
 &right_encoder {
-    status = "okay"; // <-- This enables it for this side
+    status = "okay";
 };
