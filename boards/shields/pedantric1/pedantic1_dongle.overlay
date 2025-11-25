@@ -1,5 +1,4 @@
 #include "pedantic1.dtsi"
-#include "pedantic1-layout.dtsi"
 
 / {
     chosen {
